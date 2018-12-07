@@ -1,6 +1,6 @@
 # beiJingBank
 
-> 北京银行H5
+> 智能充电H5
 
 ## Build Setup
 
