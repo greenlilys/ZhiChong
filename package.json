@@ -1,7 +1,7 @@
 {
-  "name": "BJ-Bank",
+  "name": "Charge",
   "version": "1.0.0",
-  "description": "北京银行H5",
+  "description": "智能充电H5",
   "author": "wangdongwen <1635382999@qq.com>",
   "private": true,
   "scripts": {
