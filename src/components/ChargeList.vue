@@ -1,11 +1,11 @@
 <template>
     <div>
          <div class="mt-20 border-t border-b back-white fill-both">
-           <div class="border-b flex-wrap flex-horizontal flex-justify-between flex-align-center" style="height:0.7rem;">
+           <div class="border-b flex-wrap flex-horizontal flex-justify-between flex-align-center" style="height:0.7rem;" @click="openDetail">
                <div class="fl-address">龙城花园</div>
                <div class="fl-name">智充</div>
            </div>
-           <div class="border-b flex-wrap flex-horizontal flex-justify-between flex-align-center">
+           <div class="border-b flex-wrap flex-horizontal flex-justify-between flex-align-center" @click="openDetail">
                <div class="f-content line-hl pt-10 pb-10">
                    <div class="flex-wrap flex-horizontal" style="line-height:0.52rem">
                        <div>详细地址：</div>
@@ -73,6 +73,9 @@ export default {
         },
         cancle(){           
             this.isShow = false;            
+        },
+        openDetail(){
+           this.$router.push({path:'/ChargeDetail',query:{}});
         }
     }
 }

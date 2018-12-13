@@ -6,6 +6,8 @@ import store from './store.js'
 import router from './router'
 import BaiduMap from 'vue-baidu-map' 
 
+console.log(BaiduMap)
+
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
