@@ -1,15 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import ChargingStation from '@/components/ChargingStation'
-import ChargeList from '@/components/ChargeList'
-import SearchCharge from '@/components/SearchCharge'
-import Filter from '@/components/Filter'
-import Address from '@/components/Address'
-import ChargeDetail from '@/components/ChargeDetail'
-import Chargepile from '@/components/Chargepile'
-import ChargingStandard from '@/components/ChargingStandard'
-import RealPicture from '@/components/RealPicture'
+import ChargingStation from '@/components/charge/ChargingStation'
+import ChargeList from '@/components/charge/ChargeList'
+import SearchCharge from '@/components/charge/SearchCharge'
+import Filter from '@/components/charge/Filter'
+import Address from '@/components/charge/Address'
+import ChargeDetail from '@/components/charge/ChargeDetail'
+import Chargepile from '@/components/charge/Chargepile'
+import ChargingStandard from '@/components/charge/ChargingStandard'
+import RealPicture from '@/components/charge/RealPicture'
+
+import Mycenter from '@/components/my/Mycenter'
 Vue.use(Router)
 
 export default new Router({
@@ -66,6 +68,11 @@ export default new Router({
 					component:RealPicture
 				}
 			]
+		},
+		{
+			path:'/Mycenter',
+			name:'Mycenter',
+			component:Mycenter
 		}	
 			
 		

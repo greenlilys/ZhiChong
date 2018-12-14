@@ -100,8 +100,7 @@
   content: "\e918";
 }
 .icon-arrowright:before {
-  content: "\e919";
-  color: #666;
+  content: "\e919";  
 }
 .icon-lightning:before {
   content: "\e900";
