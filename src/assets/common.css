@@ -57,11 +57,13 @@ transform: scaleY(0.5);     -webkit-transform-origin: left bottom;transform-orig
 .c-content{width: 6.7rem;	margin:0 auto;}
 
 /*1像素边框左右*/
-.border-l{ position:relative;}
-.border-l:before{content: ''; position: absolute; left: 0;
-background: #ddd;width: 0.02rem;height:100%;-webkit-transform: scaleX(0.5);transform: scaleX(0.5);
--webkit-transform-origin: 0 0;transform-origin: 0 0;}
-
+.border-l,.border-r{ position:relative;}
+.border-l:before,.border-r:after{content: ''; position: absolute; 
+background: #ddd;width: 0.02rem;height:100%;-webkit-transform: scaleX(0.5);transform: scaleX(0.5);}
+.border-l:before{left:0;-webkit-transform-origin: 0 0;transform-origin: 0 0;}
+.border-r:after{right:0px;top:0;width: 0.01rem;
+    -webkit-transform: scaleX(0.5);transform: scaleX(0.5);
+    -webkit-transform-origin: right top;transform-origin: right top;}
 /*清除浮动*/
  .clear:after{content:"";display:block;clear:both;}
  .clear{zoom:1}
@@ -155,14 +157,19 @@ background: #ddd;width: 0.02rem;height:100%;-webkit-transform: scaleX(0.5);trans
 .jianBian-blue{background: linear-gradient(#0099ff, #0188e1);}
 .box-s{box-sizing:border-box;}
 .line-b{display:inline-block;}
+/* 文本居中 */
+.t-center{text-align:center;}
 
-
+/*列表项目高度 */
+.listheight{height:0.8rem;}
 /* 文本显示两行 */
 .line-two{overflow:hidden; text-overflow:ellipsis;  display:-webkit-box;
     -webkit-box-orient:vertical;-webkit-line-clamp:2;}
 .line-only{display: inline-block;white-space: nowrap; width: 100%; overflow: hidden;text-overflow:ellipsis;}
 /* 1像素位移 */
 .one-p{transform: translateY(0.01rem);}
+.two-p{transform: translateY(0.02rem);}
+.three-p{transform: translateY(0.03rem);}
 /* 按钮样式 */
 .btn{				
     width: 6.7rem;		

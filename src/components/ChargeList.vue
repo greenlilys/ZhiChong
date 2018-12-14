@@ -26,7 +26,7 @@
                <div class="fl-btn fl" style='border:1px solid #71cd87;border-radius:4px;padding:0.07rem .08rem 0.06rem;'> <span class="one-p">有空闲</span>    </div>
                <div class="fl-btn fl ml-10" style='border:1px solid #0099ff;border-radius:4px;padding:0.07rem .08rem 0.06rem;'> <span class="one-p">支持排队</span>    </div>
                <div class="f-content color-blue fr" style="padding-top:0.08rem;">
-                   <span class="icon-navi"></span>  导航                
+                   <span class="icon-navigation"></span>  导航                
                 </div>
            </div>
        </div>   
@@ -37,7 +37,7 @@
        </div>
        <!-- 扫码充电 -->
        <div class="sao color-white back-blue ripple flex-wrap flex-horizontal flex-align-center flex-justify-center">  
-            <span class="icon-sweepCode one-p"></span>
+            <span class="icon-sweep one-p"></span>
            <div class="pl-20 one-p">  扫码启动充电</div>
        </div> 
        <!-- 输入终端号码 -->

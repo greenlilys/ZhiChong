@@ -11,10 +11,18 @@
         <!-- 选项卡 -->
          <div class="w-100 back-white font-28 color-regu flex-wrap flex-horizontal flex-align-center mt-20 cardbox">
              <template v-for="(item,index) in arr">
-                 <div :key="index" class="tabcard ripples flex-con flex-wrap flex-justify-center flex-align-center" :class="[index == currentindex ? 'active' : 'noactive']" @click="changetab(index)">
-                      <span class="">{{item.val}}</span>
+                 <div :key="index" class="tabcard h-100 border-b flex-con flex-wrap flex-justify-center flex-align-center" :class="[index == currentindex ? 'border-bs active' : '']" @click="changetab(index)">
+                      <span class="ripples three-p w-100 h-100">{{item.val}}</span>
                 </div>
-             </template>
+               
+             </template>             
+         </div>       
+
+
+         <div class="back-white w-100 btngroup flex-wrap flex-horizontal flex-align-center font-30 color-white">
+             <div class="back-blue ripple flex-wrap flex-justify-center flex-align-center"><span class="icon-navigetions mr-10"></span><span class="font-28">导航</span></div>
+             <div class="back-blue ripple flex-wrap flex-justify-center flex-align-center"><span class="icon-love mr-10"></span><span class="font-28">收藏</span></div>
+             <div class="back-blue ripple flex-wrap flex-justify-center flex-align-center"><span class="icon-clock mr-10"></span><span class="font-28">排队</span></div>
          </div>
          <router-view class="flex-con"></router-view>
     </div>
@@ -76,8 +84,19 @@ export default {
 .tophead{padding-top:0.4rem;padding-bottom:0.4rem;}
 .tophead h2{width:5.6rem;}
 .tophead h2{line-height:0.5rem;}
-.cardbox div{height:0.76rem;}
+.cardbox div{height:0.8rem;}
+.ripples{line-height:0.8rem;}
 .tabcard{text-align:center;}
-.active{border-bottom:1px #0099FF solid;color:#0099FF;}
-.noactive{border-bottom:1px #999 solid;}
+.active{color:#0099FF;}
+.btngroup{height:0.96rem;position:fixed;bottom:0;left:0;padding-left:0.3rem;}
+.btngroup>div{height:0.74rem;width:2.1rem;border-radius:0.1rem;margin-right:0.3rem;}
+
+.border-t,.border-bs{ position:relative; }
+.border-t:before,.border-bs:after{content: ''; position: absolute; left: 0;right:0;
+background: #0099FF;height: 0.02rem;-webkit-transform: scaleY(0.5);
+transform: scaleY(0.5); }
+.border-bs:after{ bottom:-1px;-webkit-transform-origin: 0 0;transform-origin: 0 0;}
+.border-t:before{top:0;-webkit-transform-origin: 0 0;transform-origin: 0 0;}
+ 
+ 
 </style>

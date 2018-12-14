@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?sc8r6z');
-  src:  url('fonts/icomoon.eot?sc8r6z#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?sc8r6z') format('truetype'),
-    url('fonts/icomoon.woff?sc8r6z') format('woff'),
-    url('fonts/icomoon.svg?sc8r6z#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?5im8di');
+  src:  url('fonts/icomoon.eot?5im8di#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5im8di') format('truetype'),
+    url('fonts/icomoon.woff?5im8di') format('woff'),
+    url('fonts/icomoon.svg?5im8di#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,82 +24,85 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-hand:before {
+.icon-love:before {
   content: "\e91a";
 }
-.icon-arrowRight:before {
+.icon-car:before {
   content: "\e901";
-  color: #666;
 }
-.icon-waitCharge:before {
+.icon-chargewate:before {
   content: "\e902";
 }
-.icon-chargingPile:before {
+.icon-chargepile:before {
   content: "\e903";
 }
 .icon-navigation:before {
   content: "\e904";
 }
-.icon-address:before {
+.icon-navigetions:before {
   content: "\e905";
 }
-.icon-order:before {
+.icon-address:before {
   content: "\e906";
 }
-.icon-message:before {
+.icon-text:before {
   content: "\e907";
 }
-.icon-arrowUp:before {
+.icon-message:before {
   content: "\e908";
 }
-.icon-arrowDown:before {
+.icon-arrowup:before {
   content: "\e909";
 }
-.icon-arrowleft:before {
+.icon-arrowdown:before {
   content: "\e90a";
 }
-.icon-card:before {
+.icon-arrowleft:before {
   content: "\e90b";
 }
-.icon-clock:before {
+.icon-card:before {
   content: "\e90c";
 }
-.icon-wallet:before {
+.icon-clock:before {
   content: "\e90d";
 }
-.icon-sweepCode:before {
+.icon-wallet:before {
   content: "\e90e";
 }
-.icon-like:before {
+.icon-sweep:before {
+  content: "\e90f";
+}
+.icon-star:before {
   content: "\e910";
 }
-.icon-phone:before {
+.icon-hand:before {
   content: "\e911";
 }
-.icon-safe:before {
+.icon-phone:before {
   content: "\e912";
 }
-.icon-agreement:before {
+.icon-safe:before {
   content: "\e913";
 }
-.icon-problem:before {
+.icon-pen:before {
   content: "\e914";
 }
-.icon-group:before {
+.icon-problem:before {
   content: "\e915";
 }
-.icon-coupon:before {
+.icon-people:before {
   content: "\e916";
 }
-.icon-navi:before {
+.icon-courp:before {
   content: "\e917";
 }
-.icon-love:before {
+.icon-circle:before {
   content: "\e918";
 }
-.icon-car:before {
+.icon-arrowright:before {
   content: "\e919";
+  color: #666;
 }
-.icon-Agreement:before {
+.icon-lightning:before {
   content: "\e900";
 }
