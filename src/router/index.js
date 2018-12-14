@@ -12,6 +12,11 @@ import ChargingStandard from '@/components/charge/ChargingStandard'
 import RealPicture from '@/components/charge/RealPicture'
 
 import Mycenter from '@/components/my/Mycenter'
+import Info from '@/components/my/Info'
+import Wallet from '@/components/my/Wallet'
+import Order from '@/components/my/Order'
+import Collection from '@/components/my/Collection'
+import Coupon from '@/components/my/Coupon'
 Vue.use(Router)
 
 export default new Router({
@@ -73,7 +78,32 @@ export default new Router({
 			path:'/Mycenter',
 			name:'Mycenter',
 			component:Mycenter
-		}	
+		},
+		{
+			path:'/Info',
+			name:'Info',
+			component:Info
+		},
+		{
+			path:'/Wallet',
+			name:'Wallet',
+			component:Wallet
+		},
+		{
+			path:'/Order',
+			name:'Order',
+			component:Order
+		},
+		{
+			path:'/Collection',
+			name:'Collection',
+			component:Collection
+		},
+		{
+			path:'/Coupon',
+			name:'Coupon',
+			component:Coupon
+		}
 			
 		
 	]
