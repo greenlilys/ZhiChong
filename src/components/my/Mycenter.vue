@@ -28,11 +28,35 @@
         </div>
         <!-- 列表 -->
         <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-b one-p">
-            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="font-36 icon-wallet two-p"></span><span class="font-32 ml-10 one-p">我的钱包</span></div>
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-wallet two-p"></span><span class="font-32 ml-10 one-p">我的钱包</span></div>
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-28">0.00元</span><span class="font-40 icon-arrowright ml-20"></span></div>
         </div>
-        <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-b one-p">
-            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="font-36 icon-text two-p"></span><span class="font-32 ml-10 one-p">我的订单</span></div>
+        <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t border-b">
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-text two-p"></span><span class="font-32 ml-10 one-p">我的订单</span></div>
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-40 icon-arrowright ml-20"></span></div>
+        </div>
+        <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white">
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-love two-p"></span><span class="font-32 ml-10 one-p">收藏的充电站</span></div>
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-40 icon-arrowright ml-20"></span></div>
+        </div>
+        <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t">
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-courp two-p"></span><span class="font-32 ml-10 one-p">我的优惠卷</span></div>
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-28">0张</span><span class="font-40 icon-arrowright ml-20"></span></div>
+        </div>
+          <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t">
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-people two-p"></span><span class="font-32 ml-10 one-p">我的用户组</span></div>
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-40 icon-arrowright ml-20"></span></div>
+        </div>
+         <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t">
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-card two-p"></span><span class="font-32 ml-10 one-p">我的充电卡</span></div>
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-40 icon-arrowright ml-20"></span></div>
+        </div>
+        <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t">
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-car two-p"></span><span class="font-32 ml-10 one-p">我的钱包</span></div>
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-28">奔弛C级</span><span class="font-40 icon-arrowright ml-20"></span></div>
+        </div>
+         <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t">
+            <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-pen two-p"></span><span class="font-32 ml-10 one-p">用户协议</span></div>
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-40 icon-arrowright ml-20"></span></div>
         </div>
     </div>
@@ -52,4 +76,5 @@ export default {
 .listitem{height:1rem;}
 .listitem div:nth-child(1){padding-left:0.3rem;}
 .listitem div:nth-child(2){padding-right:0.3rem;}
+.colors{color:#0099ff;}
 </style>
