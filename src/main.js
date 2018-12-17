@@ -4,9 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import store from './store.js'
 import router from './router'
-import BaiduMap from 'vue-baidu-map' 
-
-console.log(BaiduMap)
+import AMap from 'vue-amap'
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
@@ -25,11 +23,18 @@ Vue.prototype.$GLOBALconfig=GLOBALconfig;
 
 Vue.use(ElementUI);
 Vue.use(MintUI);
-Vue.use(BaiduMap, {
-  ak: 'EsHwHozY4ZDYuF3g4oSwY24MVUcoOEtU'  //这个地方是官方提供的ak密钥
- })
+Vue.use(AMap);
+
 Vue.config.productionTip = false
 
+// 初始化vue-amap
+AMap.initAMapApiLoader({
+  // 申请的高德key
+  key: 'e9a0b494cbeaf6c5500f7b35efffd510',
+  // 插件集合
+  plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor'],
+  v: '1.4.4'
+});
 
 /* eslint-disable no-new */
 new Vue({

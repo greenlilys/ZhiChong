@@ -16,6 +16,7 @@
     "sha1": "^1.1.1",
     "v-distpicker": "^1.0.21",
     "vue": "^2.5.2",
+    "vue-amap": "^0.5.8",
     "vue-baidu-map": "^0.21.14",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
