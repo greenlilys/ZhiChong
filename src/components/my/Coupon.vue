@@ -37,23 +37,13 @@ export default {
           changetab(i){
             if(i ==  this.currentindex) return false;
             this.currentindex = i;
-            switch(i){
-                case 0:
-                // this.$router.push({path:'/ChargeDetail',query:{}});
-                break;
-                case 1:
-                // this.$router.push({path:'/ChargeDetail/ChargingStandard',query:{}});
-                break;
-                case 2:
-                // this.$router.push({path:'/ChargeDetail/RealPicture',query:{}});
-                break;
-            }
+          
         },
     }
 }
 </script>
 <style scoped>
-.cardbox div{height:0.8rem;}
+.cardbox div{height:0.96rem;}
 .tabcard{text-align:center;}
 .active{color:#0099FF;}
 

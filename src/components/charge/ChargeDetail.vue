@@ -24,10 +24,14 @@
              <div class="back-blue ripple flex-wrap flex-justify-center flex-align-center"><span class="icon-love mr-10"></span><span class="font-28">收藏</span></div>
              <div class="back-blue ripple flex-wrap flex-justify-center flex-align-center"><span class="icon-clock mr-10"></span><span class="font-28">排队</span></div>
          </div>
-         <router-view class="flex-con"></router-view>
+         <component :is="current" class="flex-con"></component>
+         
     </div>
 </template>
 <script>
+import Chargepile from '@/components/charge/Chargepile'
+import ChargingStandard from '@/components/charge/ChargingStandard'
+import RealPicture from '@/components/charge/RealPicture'
 export default {
     data(){
         return{
@@ -42,24 +46,16 @@ export default {
                     val:'实景图'
                 }
             ],
-            currentindex:0
+            arr1:['Chargepile','ChargingStandard','RealPicture'],
+            currentindex:0,
+            current:Chargepile
         }
     },
     methods:{
         changetab(i){
             if(i ==  this.currentindex) return false;
             this.currentindex = i;
-            switch(i){
-                case 0:
-                this.$router.push({path:'/ChargeDetail',query:{}});
-                break;
-                case 1:
-                this.$router.push({path:'/ChargeDetail/ChargingStandard',query:{}});
-                break;
-                case 2:
-                this.$router.push({path:'/ChargeDetail/RealPicture',query:{}});
-                break;
-            }
+            this.current = this.arr1[i];
         },
         reset(routename){
             if(routename == 'ChargingStandard'){
@@ -77,6 +73,11 @@ export default {
         this.reset(this.$route.name)
         console.log(this.$route.name)
 
+    },
+    components:{
+        Chargepile,
+        ChargingStandard,
+        RealPicture
     }
 }
 </script>

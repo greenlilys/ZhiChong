@@ -39,23 +39,23 @@
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-love two-p"></span><span class="font-32 ml-10 one-p">收藏的充电站</span></div>
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-40 icon-arrowright ml-20"></span></div>
         </div>
-        <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t" @click="opepcoupon">
+        <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t" @click="opencoupon">
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-courp two-p"></span><span class="font-32 ml-10 one-p">我的优惠卷</span></div>
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-28">0张</span><span class="font-40 icon-arrowright ml-20"></span></div>
         </div>
-          <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t">
+          <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t" @click="opengroup">
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-people two-p"></span><span class="font-32 ml-10 one-p">我的用户组</span></div>
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-40 icon-arrowright ml-20"></span></div>
         </div>
-         <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t">
+         <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t" @click="openchargecard">
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-card two-p"></span><span class="font-32 ml-10 one-p">我的充电卡</span></div>
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-40 icon-arrowright ml-20"></span></div>
         </div>
-        <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t">
+        <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t" @click="openmycar">
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-car two-p"></span><span class="font-32 ml-10 one-p">我的车辆</span></div>
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-28">奔弛C级</span><span class="font-40 icon-arrowright ml-20"></span></div>
         </div>
-         <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t">
+         <div class="flex-wrap flex-horizontal flex-align-center flex-justify-between listitem back-white border-t" @click="openuseragreement">
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center"><span class="colors font-36 icon-pen two-p"></span><span class="font-32 ml-10 one-p">用户协议</span></div>
             <div class="flex-wrap flex-horizontal flex-align-center flex-justify-center color-gray"><span class="font-40 icon-arrowright ml-20"></span></div>
         </div>
@@ -77,8 +77,20 @@ export default {
         opencollection(){
              this.$router.push({path:'/Collection',query:{}})
         },
-        opepcoupon(){
+        opencoupon(){
             this.$router.push({path:'/Coupon',query:{}})
+        },
+        opengroup(){
+            this.$router.push({path:'/Usergroup',query:{}})
+        },
+        openchargecard(){
+            this.$router.push({path:'/Chargecard',query:{}})
+        },
+        openuseragreement(){
+            this.$router.push({path:'/Useragreement',query:{}})
+        },
+        openmycar(){
+            this.$router.push({path:'/Mycar',query:{}})
         }
     }
 }

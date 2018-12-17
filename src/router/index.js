@@ -7,9 +7,6 @@ import SearchCharge from '@/components/charge/SearchCharge'
 import Filter from '@/components/charge/Filter'
 import Address from '@/components/charge/Address'
 import ChargeDetail from '@/components/charge/ChargeDetail'
-import Chargepile from '@/components/charge/Chargepile'
-import ChargingStandard from '@/components/charge/ChargingStandard'
-import RealPicture from '@/components/charge/RealPicture'
 
 import Mycenter from '@/components/my/Mycenter'
 import Info from '@/components/my/Info'
@@ -17,6 +14,11 @@ import Wallet from '@/components/my/Wallet'
 import Order from '@/components/my/Order'
 import Collection from '@/components/my/Collection'
 import Coupon from '@/components/my/Coupon'
+import Usergroup from '@/components/my/Usergroup'
+import Chargecard from '@/components/my/Chargecard'
+import Useragreement from '@/components/my/Useragreement'
+import Mycar from '@/components/my/Mycar'
+import Platenumber from '@/components/my/Platenumber'
 Vue.use(Router)
 
 export default new Router({
@@ -54,25 +56,10 @@ export default new Router({
 			]
 		},
 		{
-			path:'/ChargeDetail',			
-			component:ChargeDetail,
-			children:[
-				{
-					path:'',
-					name:'Chargepile',
-					component:Chargepile
-				},
-				{
-					path:'ChargingStandard',
-					name:'ChargingStandard',
-					component:ChargingStandard
-				},
-				{
-					path:'RealPicture',
-					name:'RealPicture',
-					component:RealPicture
-				}
-			]
+			path:'/ChargeDetail',	
+			name:'ChargeDetail',		
+			component:ChargeDetail
+			
 		},
 		{
 			path:'/Mycenter',
@@ -103,6 +90,31 @@ export default new Router({
 			path:'/Coupon',
 			name:'Coupon',
 			component:Coupon
+		},
+		{
+			path:'/Usergroup',
+			name:'Usergroup',
+			component:Usergroup
+		},
+		{
+			path:'/Chargecard',
+			name:'Chargecard',
+			component:Chargecard
+		},
+		{
+			path:'/Useragreement',
+			name:'Useragreement',
+			component:Useragreement
+		},
+		{
+			path:'/Mycar',
+			name:'Mycar',
+			component:Mycar
+		},
+		{
+			path:'/Platenumber',
+			name:'Platenumber',
+			component:Platenumber
 		}
 			
 		
