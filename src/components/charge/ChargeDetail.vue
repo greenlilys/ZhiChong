@@ -11,10 +11,10 @@
         <!-- 选项卡 -->
          <div class="w-100 back-white font-28 color-regu flex-wrap flex-horizontal flex-align-center mt-20 cardbox">
              <template v-for="(item,index) in arr">
-                 <div :key="index" class="tabcard h-100 border-b flex-con flex-wrap flex-justify-center flex-align-center" :class="[index == currentindex ? 'border-bs active' : '']" @click="changetab(index)">
+                 <div :key="index" class="tabcard h-100 border-b flex-con flex-wrap flex-justify-center flex-align-center" :class="[index == currentindex ? 'border-bs active' : '']" 
+                 @click="changetab(index)">
                       <span class="ripples three-p w-100 h-100">{{item.val}}</span>
-                </div>
-               
+                </div>               
              </template>             
          </div>       
 
